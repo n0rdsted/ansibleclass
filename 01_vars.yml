@@ -25,8 +25,8 @@
   - name: Show Status
     debug:
       msg:
-        - "{{ httpd_status.state }}"
-        - "{{ httpd_status.enabled }}"
+        - "httpd status is {{ httpd_status.state }}"
+        - "is httpd status enabled {{ httpd_status.enabled }}"
 
   - name: Is httpd running
     debug:
