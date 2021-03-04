@@ -24,7 +24,9 @@
 
   - name: Show Status
     debug:
-      var: httpd_status.state
+      msg:
+        - "{{ httpd_status.state }}"
+        - "{{ httpd_status.enabled }}"
 
   - name: Is httpd running
     debug:
