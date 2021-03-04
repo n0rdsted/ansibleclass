@@ -17,7 +17,7 @@
       state: started
 
   - name: Allow http in firewall
-    firewalld:
+    firewall:
       service: http
       permanent: true
       state: enabled
